@@ -10,7 +10,7 @@ export default function Home() {
   const handleApiCall = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8000');
+      const response = await fetch('http://13.233.91.68:8080');
       const result = await response.json();
       setData(result);
     } catch (error) {
